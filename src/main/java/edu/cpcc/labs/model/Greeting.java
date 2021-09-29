@@ -22,4 +22,13 @@ public class Greeting {
 	public void setMessage(String message) {
 		this.message = message;
 	}
+	
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append(this.getId());
+		builder.append(":");
+		builder.append(this.getMessage());
+		return builder.toString();
+	}
 }
